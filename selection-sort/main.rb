@@ -4,9 +4,7 @@ def selection_sort(array)
         smallest_index = i
 
         (i...array.length).each do |j|
-            if array[j] < array[smallest_index]
-                smallest_index = j
-            end
+            smallest_index = j if array[j] < array[smallest_index]
         end
 
         array[i] = array[smallest_index]
@@ -17,4 +15,4 @@ def selection_sort(array)
 end
 
 array1 = [4, 7, 2, 3, 9]
-result = selection_sort(array1)
+selection_sort(array1)

@@ -1,0 +1,23 @@
+Naming/MethodParameterName:
+  MinNameLength: 1
+
+Layout/IndentationWidth:
+  Width: 4
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+AllCops:
+  NewCops: enable
+
+Lint/AmbiguousRange:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

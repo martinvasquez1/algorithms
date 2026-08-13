@@ -1,11 +1,9 @@
 def linear_search(array, v)
     array.each_with_index do |item, index|
-        if item == v
-            return index
-        end
+        return index if item == v
     end
 
-    return nil
+    nil
 end
 
 arr1 = [10, 20, 30, 40, 50]
