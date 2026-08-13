@@ -6,11 +6,11 @@ def merge(array, p, q, r)
     left = []
     right = []
 
-    (0..n1).each do |i|
+    (0...n1).each do |i|
         left[i] = array[p + i]
     end
 
-    (0..n2).each do |j|
+    (0...n2).each do |j|
         right[j] = array[q + j + 1]
     end
 
@@ -33,7 +33,3 @@ def merge(array, p, q, r)
 
     array
 end
-
-arr1 = [5, 3, 2, 1]
-result = merge(arr1, 0, 1, 3)
-p result
