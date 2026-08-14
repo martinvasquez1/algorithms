@@ -33,3 +33,14 @@ def merge(array, p, q, r)
 
     array
 end
+
+def merge_sort(array, p, r)
+    if p < r
+        q = (p + r) / 2
+
+        merge_sort(array, p, q)
+        merge_sort(array, q + 1, r)
+
+        merge(array, p, q, r)
+    end
+end
