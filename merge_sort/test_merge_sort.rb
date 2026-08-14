@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'main'
+require_relative 'merge_sort'
 
 class MergeTest < Minitest::Test
     def test_merges_two_sorted_ranges
